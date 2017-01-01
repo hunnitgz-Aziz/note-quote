@@ -3,11 +3,22 @@
 
   "name": "Note Quote",
   "description": "Jot down inspirational thoughts by others including yourself.",
-  "version": "1.0",
+  "version": "0.1",
 
   "chrome_url_overrides" : {
     "newtab": "index.html"
   },
+
+  "background": {
+    "persistent": false,
+    "scripts": ["inspiration.js"]
+  },
+
+  "icons": {
+    "128": "icon-128.png",
+    "16": "icon-16.png",
+    "48": "icon-48.png"
+   },
 
   "permissions": [
     "storage"
