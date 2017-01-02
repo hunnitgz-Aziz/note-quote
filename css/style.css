@@ -187,3 +187,23 @@ body, input {
     padding-top: 5rem;
   }
 }
+
+@media (min-height: 768px) {
+  .quotes-table {
+    margin-top: 12rem;
+  }
+
+  .entry {
+    padding-top: 8rem;
+  }
+}
+
+@media (min-height: 768px) and (max-width: 1009px) {
+  .quotes-table {
+    margin-top: 8rem;
+  }
+
+  .entry {
+    padding-top: 5rem;
+  }
+}
