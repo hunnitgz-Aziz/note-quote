@@ -22,6 +22,7 @@ body {
   -webkit-flex-direction: column;
   -webkit-font-smoothing: antialiased;
   -webkit-justify-content: center;
+  overflow-y: hidden;
 }
 
 body, input {
@@ -118,7 +119,7 @@ body, input {
 }
 
 .quotes-table {
-  padding: 0 5rem;
+  padding: 0 8rem;
 }
 
 .navbar p {
@@ -135,6 +136,10 @@ body, input {
 
   body, html {
     height: auto;
+  }
+
+  body {
+    overflow-y: auto;
   }
 
   .quote-form {
@@ -158,6 +163,10 @@ body, input {
     margin-top: 7rem;
     margin-bottom: 12rem;
   }
+
+  .quotes-table {
+    padding: 0 4rem;
+  }
 }
 
 @media (min-width: 1010px) {
@@ -168,12 +177,14 @@ body, input {
 
   .quotes-table {
     display: table;
-    border-spacing: 9rem;
+    border-spacing: 6rem;
     padding-top: 5rem;
     border-collapse: separate;
+    margin-top: 28rem;
   }
 
   .entry {
-    display: table-row;
+    margin-bottom: 10rem;
+    padding-top: 5rem;
   }
 }
