@@ -103,8 +103,10 @@ var Quotes = {
 				$h1.innerHTML = '<a data-op="edit" data-id="'+ entry.id +'">Edit</a> | <a data-op="remove" data-id="'+ entry.id +'">Remove</a>';
 				$sc.appendChild($h1);
 				$sc.setAttribute("id", "entry-"+ entry.id);
-				$sc.setAttribute("class", "entry")
-				Quotes.$section.appendChild($sc);
+				$sc.setAttribute("class", "entry");
+				// Quotes.$section.appendChild($sc);
+				$('.quotes-table').append($("<div class='row'>").append($sc));
+
 			},
 			QuoteEdit: function(entry) {
 				var $sc = document.getElementById("entry-"+ entry.id), $h1, key;
